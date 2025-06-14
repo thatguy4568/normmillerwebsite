@@ -1,0 +1,110 @@
+/* === Background & Base === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-navy-blue-solid-color-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+/* === Header === */
+header {
+  background-color: rgba(0, 0, 128, 0.85); /* navy blue */
+  padding: 1.5em 0;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* === Bubble Style === */
+.bubble {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 25px;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+  text-align: center;
+}
+
+/* Side-by-side bubbles */
+.bubble-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 900px;
+}
+
+.side {
+  flex: 1 1 300px;
+}
+
+/* === Buttons === */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00008B; /* dark blue */
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #000080; /* navy */
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: rgba(0, 0, 128, 0.85); /* navy blue */
+  color: white;
+  margin-top: 3em;
+}
+
+/* === Responsive === */
+@media (max-width: 700px) {
+  .bubble-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
