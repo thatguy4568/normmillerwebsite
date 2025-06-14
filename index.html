@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Norm Miller</title>
+  <style>
+    /* === Background & Base === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://www.solidbackgrounds.com/images/1920x1080/1920x1080-navy-blue-solid-color-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* === Header === */
+header {
+  background-color: rgba(0, 0, 128, 0.85); /* navy blue */
+  padding: 1.5em 0;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* === Bubble Style === */
+.bubble, .about-container, .flex-bubble, section {
+  background-color: rgba(255, 255, 255, 0.1); /* light transparent background */
+  color: white; /* make sure all text is white */
+  padding: 2em;
+  border-radius: 25px;
+  margin: 2em auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2, p, li, a {
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Side-by-side bubbles */
+.bubble-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 900px;
+}
+
+.side {
+  flex: 1 1 300px;
+}
+
+/* === Buttons === */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00008B; /* dark blue */
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #000080; /* navy */
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: rgba(0, 0, 128, 0.85); /* navy blue */
+  color: white;
+  margin-top: 3em;
+}
+
+/* === Responsive === */
+@media (max-width: 700px) {
+  .bubble-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Norm Miller's Personal Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#linkedin">LinkedIn</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+         Good Day! My name is Norm Miller! I am a junior majoring in Data Science who is also pursuing an academic minor in history. Last semester, I took part in the Honors Scholars program where I did an honors credit in a regular for my ENG 2142 poetry class. In that project, I used Google Colaboratory, using data mining, visualization, management, and analyzation techniques to showcase different genres and eras of poetry.
+
+         I am also a member of the New York Public Interest Research Group (NYPIRG) at City Tech, where I am one of our student statewide delegate for our campus. We come up with proposals to help with the public interest of New Yorkers across the state. So if you want to learn more about me, please, don't hesitate to contact me. 
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="https://giffiles.alphacoders.com/149/14915.gif" alt="Norm Miller animated" style="max-width: 100%; border-radius: 12px;">
+      </div>
+    </section>
+
+    <div class="flex-bubble">
+      <section id="resume">
+        <h2>Resume</h2>
+        <p>Click below to download my resume:</p>
+        <a class="button" href="Norm_Miller_Resume.pdf" download>Download Resume</a>
+
+      </section>
+
+      <section id="linkedin">
+        <h2>LinkedIn</h2>
+        <p>Connect with me on LinkedIn:</p>
+        <a class="button" href="https://www.linkedin.com/in/norm-miller-94968336b/" target="_blank">Visit My LinkedIn</a>
+      </section>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul style="text-align: left;">
+          <li>Traveling</li>
+          <li>Working Out</li>
+          <li>Fimtograpy</li>
+          <li>Photograpy</li>
+          <li>Love having alone time to heal and reflect</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at: <a href="mailto:norm.miller1@gmail.com">norm.miller1@gmail.com</a></p>
+      <p>Phone Number: 1-703-485-6838</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 Norm Miller. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
