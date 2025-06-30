@@ -2,11 +2,29 @@
 <html>
     <head>
         <title>Notes Taking App</title>
-        <script src="index.js"/>
-        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="index.css" />
     </head>
     <body>
+        <div class="tag">
+            <h1>Note Taker</h1>
+            <button class="addPage">+</button>
+        </div>
+        <div class="divider">
+            <div class="savedNote">
+                <div>untitled</div>
+            </div>
+            <div class="notePad">
+                <input type="text" class="inputText" id="title" name="title" placeholder="Title"><br/>
+                <input type="text" class="inputText" name="paragraph" placeholder="Click to type...">
+                <textarea id="area" name="paragraph" spellcheck="false" field-sizing="content"></textarea>
+                
+            </div>
+        </div>
         
-    </body>
 
+
+        
+
+
+    </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "name": "note_taking_app.npm",
+  "version": "1.0.0",
+  "description": "Note_Taking App using IMPORTS and EXPRESS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlamingBody/Note_Taking_Project_-TTPR-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlamingBody/Note_Taking_Project_-TTPR-/issues"
+  },
+  "homepage": "https://github.com/FlamingBody/Note_Taking_Project_-TTPR-#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  }
+}
