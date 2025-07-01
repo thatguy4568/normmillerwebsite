@@ -9,6 +9,7 @@ const port = 3000;
 let notes = []; 
 
 
+
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
@@ -25,8 +26,29 @@ app.get("/", (req, res) =>{
     };
     newNote.title = newNote.title.slice(0,10) + "...";
     notes.push(newNote);
+    console.log({notes});
+    //notePageOpen = false;
     res.redirect("/")
 })
+
+/*
+app.post("/open/:id"), (req,res) => {
+    const idToOpen = parseInt(req.params.id);
+    notes.forEach(note => {
+        if (note.id === idToOpen){
+            let title = note.title;
+            let content = note.content;
+
+            document.querySelector("#title").innerHTML = title;
+            document.querySelector("#content").innerHTML = content;
+            
+        }
+    })
+    res.redirect("/")
+
+}
+    */
+    
 
 app.post("/delete/:id", (req, res) => {
     const idToDelete = parseInt(req.params.id);
@@ -37,3 +59,5 @@ app.post("/delete/:id", (req, res) => {
 app.listen(port, (req, res)=>{
     console.log(`running on port ${port}`);
 });
+
+

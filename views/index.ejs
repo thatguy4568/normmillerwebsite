@@ -24,7 +24,7 @@
             <form action="/delete/<%= note.id %>" method="POST">
               <button type="submit"><i class="fa-solid fa-trash"></i></button>
             </form>
-          </div>
+        </div>
         <% }) %>
         
         </div>
@@ -49,36 +49,49 @@
   <body>
     <div class="tag">
       <h1>Note Taker</h1>
-      <button class="addPage">+</button>
+      <button class="addPage" onclick="createNewPage()">+</button>
     </div>
     <div class="divider">
       <div class="savedNote">
         <% notes.forEach(note => { %>
         <div class="page">
-          <h3><%= note.title %></h3>
+          <form action="/open/<%= note.id %>" method="POST">
+            <button type="submit"><h3><%= note.title %></h3></button>
+          </form>
           <form action="/delete/<%= note.id %>" method="POST">
             <button type="submit"><img src="trash_icon.png" width="25px"/></button>
           </form>
         </div>
         <% }) %>
       </div>
-      <div>
+      <div class="notePadPage">
+        <!--
         <form action="/new" method="POST" class="notePad">
+          <div id="noteHeader">
           <input
             type="text"
             class="inputText"
             id="title"
             name="title"
             placeholder="Title"
-          /><br />
+          />
+          <button id="create" type="submit">Add Note</button>
+          </div>
+          <br />
           <textarea
             name="content"
+            id="content"
             spellcheck="false"
             placeholder="Click to type..."
           ></textarea>
-          <button type="submit">Add Note</button>
+          
         </form>
+        -->
       </div>
     </div>
+
+    <footer>
+      <script src="/function.js"></script>
+    </footer>
   </body>
 </html>

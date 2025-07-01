@@ -1,11 +1,9 @@
 :root{
-    --text-size: 1.5rem;
+    --text-size: 1.4rem;
     --padding-xsm: 10px;
     --padding-sm: 25px;
     --padding-md: 50px;
 }
-
-
 
 *{
     margin: 0;
@@ -50,7 +48,6 @@
 }
 
 .notePad{
-    background-color: beige;
     display: flex;
     flex-direction: column;
     margin-top: var(--padding-sm);
@@ -58,8 +55,23 @@
     margin-bottom: var(--padding-sm);
 }
 
-#title.inputText{
+#noteHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+#noteHeader > #title{
+
     font-weight: bold;
+    width: 70%;
+}
+
+#noteHeader > #create{
+
+    border-radius: 50px;
+    background-color: aliceblue;
+    padding: 10px;
+
 }
 
 input{
@@ -72,7 +84,7 @@ textarea{
     font-size: var(--text-size);
     height: 500px;
     size-adjust: content;
-    border-style: none;
+    border-style:dashed;
 }
 
 .page{
@@ -90,4 +102,19 @@ textarea{
 .page:hover{
     filter:brightness(125%);
 
+}
+
+div.page > form > button{
+    border-style: none;
+    background-color: transparent;
+}
+
+@media (max-width: 960px){
+    .divider{
+        grid-template-columns: 35% 55%;
+    }
+
+    *{
+        font-size: 1rem;
+    }
 }
