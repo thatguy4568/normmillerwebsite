@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
@@ -18,6 +19,21 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", (req, res) =>{
     res.render("index", { notes });
 });
+
+app.post("/", (req, res) => {
+    const idToOpen = parseInt(req.params.id);
+    notes.forEach(note => {
+        if (note.id === idToOpen){
+            let title = note.title;
+            let content = note.content;
+
+            document.querySelector("#title").innerHTML = title;
+            document.querySelector("#content").innerHTML = content;
+            
+        }
+    })
+});
+
  app.post("/new", (req, res) =>{
     const {title, content} = req.body;
     const newNote = {

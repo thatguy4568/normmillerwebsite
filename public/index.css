@@ -90,6 +90,7 @@ textarea{
 .page{
     background-color: bisque;
     padding: 20px;
+    margin-bottom: var(--padding-sm);
     text-align: center;
     border: 5px solid black;
     border-radius: 50px;
