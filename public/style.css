@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.top_Container{
+    display: flex;
+    background-color: aquamarine;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.main_container{
+    display: flex;
+    height: 100vh;
+}
+
+.left_notes{
+    border-right: 1px solid gray;
+    height: 100%;
+    width: 30%;
+}
+
+.new_note{
+    border-bottom: 1px solid gray;
+    margin-top: 1px;
+    display: flex;
+    padding: 10px 10px;
+    background-color: white;
+    height: 45px;
+}
+
+.new_note h3{
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+.new_note button{
+    width: 0%;
+    height: 0%;
+}
+.fa-trash{
+    border: none;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 11pt;
+    transition: all 0.3s ease;
+}
+
+.fa-trash:hover {
+    color: red;
+}
+
+.right_notepad{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    background-color: white;
+    height: 100%;
+    width: 70%;
+}
+
+.note-form {
+    padding: 10px 15px;
+}
+form input{
+    display: block;
+    padding: 10px 15px;
+    background-color: transparent;
+    fill: none;
+    border: none;
+    font-size: 20pt;
+    font-family: 'Caveat', cursive;
+    color: black;
+}
+textarea{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+}
+
+form button{
+    display: block;
+}
