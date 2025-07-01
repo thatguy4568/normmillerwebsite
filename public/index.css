@@ -39,18 +39,23 @@
     display: grid;
     grid-template-columns: 30% 60%;
     column-gap: 5%;
-    padding: var(--padding-md);
+    border: 5px solid black;
 }
 
 
 .savedNote{
     background-color: azure;
+    border-right: 5px solid black;
+    padding: var(--padding-sm);
 }
 
 .notePad{
     background-color: beige;
     display: flex;
     flex-direction: column;
+    margin-top: var(--padding-sm);
+    margin-right: var(--padding-sm);
+    margin-bottom: var(--padding-sm);
 }
 
 #title.inputText{
@@ -65,5 +70,24 @@ input{
 textarea{
     padding: var(--padding-xsm);
     font-size: var(--text-size);
+    height: 500px;
     size-adjust: content;
+    border-style: none;
+}
+
+.page{
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.page:hover{
+    filter:brightness(125%);
+
 }

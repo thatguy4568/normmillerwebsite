@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Notes Taking App</title>
-        <link type="text/css" rel="stylesheet" href="/css/index.css" />
+        <link type="text/css" rel="stylesheet" href="index.css" />
     </head>
     <body>
         <div class="tag">
@@ -11,12 +11,16 @@
         </div>
         <div class="divider">
             <div class="savedNote">
-                <div>untitled</div>
+                <div class="page">
+                    <span>untitled</span>
+                    <input type="image" src="trash_icon.png" name="deleteForm" class="btTxt delete" id="deleteForm" />
+                </div>
+
             </div>
             <div class="notePad">
                 <input type="text" class="inputText" id="title" name="title" placeholder="Title"><br/>
-                <input type="text" class="inputText" name="paragraph" placeholder="Click to type...">
-                <textarea id="area" name="paragraph" spellcheck="false" field-sizing="content"></textarea>
+                <!--<input type="text" class="inputText" name="paragraph" placeholder="Click to type...">-->
+                <textarea id="area" name="paragraph" spellcheck="false" placeholder="Click to type..."></textarea>
                 
             </div>
         </div>
