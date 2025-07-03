@@ -1,0 +1,7 @@
+[
+  {
+    "id": 1751555666073,
+    "title": "Welcome to Note Taker",
+    "content": "Here are the instructions for the Note Taker!\r\n\r\n1) The top right corner of the tab is the extender tab, which opens Notepad on the right screen.\r\n\r\n2) The Add Note button saves whatever note you put down on the Notepad to the save file column on the left. It won't save if there's nothing in the Notepad.\r\n\r\n3) The left screen is the save file column, which contains all the saved notes and can be pulled up whenever you want to view or edit. \r\n"
+  }
+]

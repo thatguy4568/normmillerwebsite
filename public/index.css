@@ -1,0 +1,140 @@
+:root{
+    --text-size: 1.4rem;
+    --padding-xsm: 10px;
+    --padding-sm: 25px;
+    --padding-md: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: var(--text-size);
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: normal; 
+    resize: vertical;
+}
+
+.addPage{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: aliceblue;
+    font-size: 2rem;
+}
+
+
+.tag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: var(--padding-sm);
+
+}
+
+.divider{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 5%;
+    border: 5px solid black;
+}
+
+
+.savedNote{
+    background-color: azure;
+    border-right: 5px solid black;
+    padding: var(--padding-sm);
+}
+
+.notePad{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--padding-sm);
+    margin-right: var(--padding-sm);
+    margin-bottom: var(--padding-sm);
+}
+
+#noteHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+#noteHeader > #title{
+
+    font-weight: bold;
+    width: 70%;
+}
+
+#noteHeader > #create{
+
+    border-radius: 50px;
+    background-color: aliceblue;
+    padding: 10px;
+
+}
+
+input{
+    height: 3rem;
+    padding-left: var(--padding-xsm);
+}
+
+textarea{
+    padding: var(--padding-xsm);
+    font-size: var(--text-size);
+    height: 500px;
+    size-adjust: content;
+    border-style:dashed;
+}
+
+.page{
+    background-color: bisque;
+    margin-bottom: var(--padding-sm);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+div.page > form > button:hover{
+    background-color: rgb(255,255,255, 0.5);
+    filter:brightness(125%);
+
+}
+
+div.page > form > button{
+    padding: 10px;
+    border-style: none;
+    background-color: transparent;
+}
+
+div.page > form:nth-child(1) > button{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+div.page > form:nth-child(2) > button{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+
+@media (max-width: 960px){
+    .divider{
+        grid-template-columns: 40% 50%;
+    }
+
+    *{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+
+    body{
+        width: 500px;
+    }
+}

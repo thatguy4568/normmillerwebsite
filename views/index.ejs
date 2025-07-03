@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notes Taking App</title>
+    <link type="text/css" rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="tag">
+      <h1>Note Taker</h1>
+      <button class="addPage" onclick="createNewPage()">+</button>
+    </div>
+    <div class="divider">
+      <div class="savedNote">
+        <% notes.forEach(note => { %>
+        <div class="page"> <!--open/<%= note.id %>-->
+          <form action="/open/<%= note.id %>" method="GET">
+            <button type="submit"><h3><%= note.title.slice(0,15) + "..." %></h3></button>
+          </form>
+          <form action="/delete/<%= note.id %>" method="POST">
+            <button type="submit"><img src="trash_icon.png" width="25px"/></button>
+          </form>
+        </div>
+        <% }) %>
+      </div>
+      <div class="notePadPage">
+        <!--
+        <form action="/new" method="POST" class="notePad">
+          <div id="noteHeader">
+          <input
+            type="text"
+            class="inputText"
+            id="title"
+            name="title"
+            placeholder="Title"
+          />
+          <button id="create" type="submit">Add Note</button>
+          </div>
+          <br />
+          <textarea
+            name="content"
+            id="content"
+            spellcheck="false"
+            placeholder="Click to type..."
+          ></textarea>
+          
+        </form>
+        -->
+      </div>
+    </div>
+
+    <footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="/function.js"></script>
+    </footer>
+  </body>
+</html>
