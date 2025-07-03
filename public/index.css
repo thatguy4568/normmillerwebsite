@@ -89,10 +89,9 @@ textarea{
 
 .page{
     background-color: bisque;
-    padding: 20px;
     margin-bottom: var(--padding-sm);
     text-align: center;
-    border: 5px solid black;
+    border: 1px solid black;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -100,22 +99,42 @@ textarea{
 
 }
 
-.page:hover{
+div.page > form > button:hover{
+    background-color: rgb(255,255,255, 0.5);
     filter:brightness(125%);
 
 }
 
 div.page > form > button{
+    padding: 10px;
     border-style: none;
     background-color: transparent;
 }
 
+div.page > form:nth-child(1) > button{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+div.page > form:nth-child(2) > button{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+
 @media (max-width: 960px){
     .divider{
-        grid-template-columns: 35% 55%;
+        grid-template-columns: 40% 50%;
     }
 
     *{
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+
+    body{
+        width: 500px;
     }
 }

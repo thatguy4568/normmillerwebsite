@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notes Taking App</title>
+    <link type="text/css" rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="tag">
+      <h1>Note Taker</h1>
+    </div>
+      <div class="notePadPage">
+        <form action="/update/<%= display.displayID %>" method="POST" class="notePad">
+          <div id="noteHeader">
+          <input
+            type="text"
+            class="inputText"
+            id="title"
+            name="title"
+            placeholder="Title"
+            value="<%= display.displayTitle %>"
+          >
+          <button id="create" type="submit">Update</button>
+          </div>
+          <br />
+          <textarea
+            name="content"
+            id="content"
+            spellcheck="false"
+            placeholder="Click to type..."
+          ><%= display.displayContent %></textarea>
+          
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="/function.js"></script>-->
+    </footer>
+  </body>
+</html>

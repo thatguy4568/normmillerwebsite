@@ -1,4 +1,4 @@
-let notePageOpen = true;
+let notePageOpen = false;
 
 function createNewPage(){
 
@@ -11,8 +11,9 @@ function createNewPage(){
             id="title"
             name="title"
             placeholder="Title"
+            value=""
           />
-          <button id="create" type="submit">Add Note</button>
+          <button id="create" type="submit" onclick="checkNote()">Add Note</button>
           </div>
           <br />
           <textarea
@@ -34,5 +35,6 @@ function createNewPage(){
 
 
 }
+
 
 createNewPage();
