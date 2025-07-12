@@ -1,2 +1,1 @@
-# Note_Taking_Project_-TTPR-
-Note_Taking App using IMPORTS and EXPRESS
+Note_Taking App using IMPORTS and EXPRESS, created on 7/3/2025, by Christopher Gutama (Chrisg3142),Wen Xiong Zhang (Flaming Body), and Norm Miller (thatguy4568) for the NYC Tech Talent Pipeline Residency.
